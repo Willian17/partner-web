@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 import logoImg from '../../assets/images/logo.png'
 import landingImg from '../../assets/images/landing.svg'
@@ -15,7 +16,7 @@ export default function Landing(){
            <div id="page-landing-content" className="container">
                 <div className="logo-container">
                     <img src={logoImg} className="logo" alt="Partner"/>
-                    <h2>Sua plataforma para procurar sócios</h2>
+                    <h2>Sua plataforma para encontrar sócios</h2>
                 </div> 
 
                 <img 
@@ -26,19 +27,19 @@ export default function Landing(){
 
                 <div className="buttons-container">
 
-                    <a href="/" className="announce">
+                    <Link to="/announce" className="announce">
                             <IconContext.Provider value={{ color: "#fff", className:"icon" }}>
                                 <FaHandshake /> 
                             </IconContext.Provider>
                             Anunciar
-                    </a>
+                    </Link>
 
-                    <a href="/" className="search">
+                    <Link to="/list" className="search">
                         <IconContext.Provider value={{ className:"icon" }}>
                             < FcSearch /> 
                          </IconContext.Provider>
                             Procurar
-                    </a>
+                    </Link>
                 </div>
            </div>
        </div>

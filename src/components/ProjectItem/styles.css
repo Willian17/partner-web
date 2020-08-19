@@ -1,0 +1,117 @@
+.project-item {
+    background: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+  }
+  
+  .project-item header {
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-item header img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+  }
+  
+  .project-item header div {
+    margin-left: 2.4rem;
+  }
+  
+  .project-item header div strong {
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+  }
+  
+  .project-item header div span {
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+  }
+  
+  .project-item > p {
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+  .project-item span.address{
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 2rem;
+      margin-right: 2rem;
+      color: var(--color-text-complement);
+  }
+  
+  .project-item footer {
+    padding: 3.2rem 2rem;
+    background: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .project-item footer p strong {
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    display: block;
+  }
+  
+  .project-item footer a {
+    width: 20rem;
+    height: 5.6rem;
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.4rem ARchivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: 0.2s;
+    text-decoration: none;
+  }
+  .project-item footer a.whatsapp{
+    background: var(--color-secondary);
+
+  }
+  .project-item footer a.email{
+    background: var(--color-tertiary)
+  }
+  
+  .project-item footer button:hover {
+    background: var(--color-secondary-dark);
+  }
+  
+  @media (min-width: 700px) {
+    .project-item header,
+    .project-item footer {
+      padding: 3.2rem;
+    }
+  
+    .project-item > p {
+      padding: 0 3.2rem;
+    }
+  
+    .project-item footer p strong {
+      display: initial;
+      margin-left: 1.6rem;
+    }
+  
+    .project-item footer button {
+      width: 245px;
+      font-size: 1.6rem;
+      justify-content: center;
+    }
+  
+    .project-item footer button img {
+      margin-right: 1.6rem;
+    }
+  }

@@ -1,0 +1,45 @@
+#page-project-list {
+	width: 100vw;
+	height: 100vh;
+}
+
+  #page-project-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+  }
+  
+  @media (min-width: 700px) {
+    #page-project-list {
+      max-width: 100%;
+    }
+    
+    #page-project-list main {
+      padding: 32px 0;
+      max-width: 740px;
+      margin: 0 auto;
+    }
+  
+    .project-item header,
+    .project-item footer {
+      padding: 3.2rem;
+    }
+  
+    .project-item > p {
+      padding: 0 3.2rem;
+    }
+  
+    .project-item footer p strong {
+      display: initial;
+      margin-left: 1.6rem;
+    }
+  
+    .project footer button {
+      width: 24.5rem;
+      font-size: 1.6rem;
+      justify-content: center;
+    }
+  
+    .project-item footer button img {
+      margin-left: 1.6rem;
+    }
+  }
